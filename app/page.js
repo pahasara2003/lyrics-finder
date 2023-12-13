@@ -42,7 +42,6 @@ const Home = () => {
           <CardHeader className=" w-full items-center m-3 justify-center">
             <div className="flex">
               <Input
-                color="primary"
                 ref={input}
                 size="md"
                 placeholder="Search songs ..."
@@ -52,7 +51,6 @@ const Home = () => {
                 className="my-1 mx-3"
                 isIconOnly
                 size="lg"
-                color="primary"
                 variant="ghost"
                 onClick={() => {
                   setData(undefined);
