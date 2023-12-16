@@ -16,11 +16,8 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" href="/icon-192x192.png"></link>
         <meta name="theme-color" content="#fff" />
       </head>
-      <body className="min-h-screen flex flex-col justify-between ">
+      <body className="min-h-screen dark:bg-[#18181b] flex flex-col justify-between ">
         <Provider> {children} </Provider>
-        <footer className="p-4  w-[100%]  text-center text-sm bg-gray-100">
-          &copy; Pahasara Wickramasinghe
-        </footer>
       </body>
     </html>
   );

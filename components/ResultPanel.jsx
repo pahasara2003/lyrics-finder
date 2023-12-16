@@ -46,8 +46,8 @@ const ResultPanel = ({ data, setPath }) => {
                       src={d.result.header_image_thumbnail_url}
                     />
                   </CardHeader>
-                  <CardBody className="p-0">
-                    <p className="text-center font-bold text-md">
+                  <CardBody className="p-0 px-5">
+                    <p className="text-center truncate font-bold text-md">
                       {d.result.title}
                     </p>
                   </CardBody>

@@ -1,16 +1,15 @@
 import { AvatarGroup, Image, User } from "@nextui-org/react";
 
 const DetailsPanel = ({ DATA }) => {
-  console.log(DATA);
   return (
-    <div className="relative md:max-w-[50vw] p-5 overflow-hidden flex flex-col items-center  w-screen">
+    <div className="relative md:max-w-[40vw] p-5 overflow-hidden flex flex-col items-center  w-screen">
       <Image
         removeWrapper
         className="m-0 w-[100%] blur-md opacity-10 h-[350px] rounded-none  z-50 object-cover top-0 left-0 absolute "
         src={DATA.data.song_art_image_url}
       />
       <Image
-        className=" w-[300px]  m-5 h-[300px] z-50 mx-auto"
+        className=" w-[300px]  m-5 h-[300px] z-50 mx-auto object-cover"
         src={DATA.data.header_image_url}
       />
       <p className="relative mx-2 mt-14 text-[1.2rem] md:text-[1.5rem] font-bold">

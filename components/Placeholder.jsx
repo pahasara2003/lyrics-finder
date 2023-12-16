@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import BeatLoader from "react-spinners/BeatLoader";
 import { motion } from "framer-motion";
-
+import { useTheme } from "next-themes";
 const Placeholder = () => {
   const [display, setDisplay] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     setTimeout(() => setDisplay(true), 5000);
@@ -16,7 +17,10 @@ const Placeholder = () => {
         }}
         transition={{ delay: 5, duration: 1 }}
       >
-        <BeatLoader className="relative top-[80px]" />
+        <BeatLoader
+          color={theme === "dark" ? "white" : "black"}
+          className="relative top-[80px]"
+        />
       </motion.div>
 
       <motion.div
