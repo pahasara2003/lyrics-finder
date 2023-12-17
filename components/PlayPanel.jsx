@@ -34,9 +34,9 @@ const PlayPanel = ({ DATA }) => {
   }, []);
 
   return (
-    <div>
+    <div className="lg:w-[25vw] w-[70vw] lg:m-0 my-5">
       {data !== undefined ? (
-        <Card className="lg:w-[25vw] w-[70vw] lg:m-0 my-5">
+        <Card className="">
           {data.album !== null && (
             <CardHeader className="p-5 flex-col">
               <p className="text-center text-xl text-semibold">Album</p>
