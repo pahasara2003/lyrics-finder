@@ -9,9 +9,11 @@ export function Provider({ children }) {
       <NextThemesProvider
         attribute="class"
         defaultTheme={
-          localStorage.getItem("theme") === null
-            ? "light"
-            : localStorage.getItem("theme")
+          typeof window !== "undefined"
+            ? localStorage.getItem("theme") === null
+              ? "light"
+              : localStorage.getItem("theme")
+            : "light"
         }
       >
         {children}
